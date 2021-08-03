@@ -15,7 +15,6 @@ public class Main {
 			grandFour.capacite = 500;
 			grandFour.puissance = 1000;
 
-		
 			pates.manger();
 			petitFour.cuire(pates);
 			grandFour.cuire(pates);
