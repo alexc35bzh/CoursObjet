@@ -1,5 +1,5 @@
 package miam;
-/* CLasse principale 
+
 public class Main {
 
 	public static void main(String[] args) {
