@@ -5,6 +5,18 @@ public class Product {
 	String description;
 	double price;
 	
+	/**
+	 * CONSTRUCTEUR
+	 * @param name
+	 * @param description
+	 * @param price
+	 */
+	public Product(String name, String description, double price) {
+		this.name = name;
+		this.description = description;
+		this.price = price;
+	}
+
 	public void look() {
 		
 	}
