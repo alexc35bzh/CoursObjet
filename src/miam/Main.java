@@ -1,25 +1,25 @@
 package miam;
-
+import homeshop.*;
 // Classe principale
 
 public class Main {
 
 	public static void main(String[] args) {
-		aliment pates = new aliment();
-			pates.nom = "Spaghettis";
-			pates.estCuit = false;
-		four petitFour = new four();
-			petitFour.capacite = 50;
-			petitFour.puissance = 200;
-		four grandFour = new four();
-			grandFour.capacite = 500;
-			grandFour.puissance = 1000;
 
-			pates.manger();
-			petitFour.cuire(pates);
-			grandFour.cuire(pates);
-			pates.manger();
-
+		// Création des produits
+	    Product cafe = new Product("Philips HD7866/61", "Philips SENSEO Quadrante, Noir - 1 ou 2 tasses", 79.99);
+	    Product tv = new Television("TV Samsung UE49MU6292", "Smart TV LED incurvée 49\"", 599, 49, "LED");
+	    Fridge fridge = new Fridge("BEKO TSE 1042 F", "Réfrigérateur BEKO 130L - Classe A+ - blanc", 189, 130, false);
+		// Création d'un client
+	    Customer customer = new Customer("Juste Leblanc", "19 rue Germain Pilon, Paris");
+	    // Création d'une facture
+	    Bill bill = new Bill(customer);
+	    // Ajout d'une ligne à la facture
+	    bill.addProduct(cafe, 1);
+	    bill.addProduct(tv, 3);
+	    bill.addProduct(fridge, 5);
+	    bill.afficheBill();
+	    
 	}
 
 }
