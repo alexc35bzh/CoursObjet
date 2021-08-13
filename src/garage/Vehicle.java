@@ -1,3 +1,4 @@
+// Classe véhicules
 package garage;
 
 public abstract class Vehicle {
