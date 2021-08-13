@@ -1,6 +1,6 @@
 package miam;
 import homeshop.*;
-// Classe principale
+// Classe principale. Test.
 
 public class Main {
 
