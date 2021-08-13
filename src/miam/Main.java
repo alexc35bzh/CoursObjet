@@ -14,7 +14,7 @@ public class Main {
 	    Customer customer = new Customer("Juste Leblanc", "19 rue Germain Pilon, Paris");
 	    // Création d'une facture
 	    Bill bill = new Bill(customer);
-	    // Ajout d'une ligne à la facture
+	    // Ajout de lignes à la facture
 	    bill.addProduct(cafe, 1);
 	    bill.addProduct(tv, 3);
 	    bill.addProduct(fridge, 5);
