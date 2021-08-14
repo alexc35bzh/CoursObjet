@@ -1,3 +1,4 @@
+// Double authentification
 package miam;
 import homeshop.*;
 // Classe principale. Test.
