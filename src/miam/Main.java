@@ -1,12 +1,14 @@
 // Double authentification
 package miam;
 import homeshop.*;
+import paris.*;
 // Classe principale. Test.
 
 public class Main {
 
 	public static void main(String[] args) {
 
+		/*
 		// Création des produits
 	    Product cafe = new Product("Philips HD7866/61", "Philips SENSEO Quadrante, Noir - 1 ou 2 tasses", 79.99);
 	    Product tv = new Television("TV Samsung UE49MU6292", "Smart TV LED incurvée 49\"", 599, 49, "LED");
@@ -20,7 +22,12 @@ public class Main {
 	    bill.addProduct(tv, 3);
 	    bill.addProduct(fridge, 5);
 	    bill.afficheBill();
-	    
+	    */
+	    Parisien segolene = new Parisien();
+	    Bus bus = new Bus();
+	    Taxi G7 = new Taxi();
+	    segolene.seDeplacer(bus);
+	    segolene.seDeplacer(G7);
 	}
 
 }

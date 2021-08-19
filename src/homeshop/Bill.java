@@ -6,7 +6,12 @@ public class Bill {
 	private Customer customer;
 	// Création d'une liste de paies produits/qté
 	private Map<Product, Integer> products = new HashMap<Product, Integer>();
-	
+	// Création d'une livraison
+	private Delivery delivery;
+		public Bill(Delivery delivery) {
+			this.delivery = delivery;
+		}
+
 	// Alimentation des produits et quantités
 	public void addProduct(Product product, Integer quantity) {
 		this.products.put(product, quantity);	
