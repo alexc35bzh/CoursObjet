@@ -14,11 +14,11 @@ public class Customer {
 		this.address = address;
 	}
 
-	String getFullName() {
+	public String getFullName() {
 		return fullName;
 	}
 
-	String getAddress() {
+	public String getAddress() {
 		return address;
 	}
 
